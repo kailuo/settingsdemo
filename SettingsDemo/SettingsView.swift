@@ -20,14 +20,14 @@ struct SettingsView: View {
                     Label("General", systemImage: "gearshape")
                 }
                 .tag(Tabs.general)
-                .frame(width: 360, height: 240)
+                .frame(minWidth: 360, maxWidth: 480, minHeight: 240, maxHeight: 320)
 
             SettingsAdvancedView()
                 .tabItem {
                     Label("Advanced", systemImage: "command")
                 }
                 .tag(Tabs.general)
-                .frame(width: 480, height: 320)
+                .frame(minWidth: 420, maxWidth: 500, minHeight: 360, maxHeight: 420)
         }
     }
 }
